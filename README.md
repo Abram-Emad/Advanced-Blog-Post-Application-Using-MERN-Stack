@@ -71,8 +71,8 @@ A feature-rich blog post application built with the MERN stack (MongoDB, Express
 ## Configuration
 
 1. **Environment Variables**  
-   Create a `.env` file in the `server` directory:
-   env
+   Create a `.env` file in the `application-backend` directory:
+`
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret_key
    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
@@ -80,7 +80,7 @@ A feature-rich blog post application built with the MERN stack (MongoDB, Express
    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
    EMAIL_USER=your_email@gmail.com
    EMAIL_PASS=your_email_app_password
-   
+`  
 
 2. **Cloudinary Setup**  
    Sign up at [Cloudinary](https://cloudinary.com/) and add your credentials to `.env`.
