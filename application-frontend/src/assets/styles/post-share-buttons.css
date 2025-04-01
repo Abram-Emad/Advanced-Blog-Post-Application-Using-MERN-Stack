@@ -1,0 +1,234 @@
+/* - Start Post Share Buttons - */
+h2.Post-Share-Description {
+  right: 5px;
+  margin: 10px 0 15px;
+  font-size: 18px;
+}
+
+h2.Post-Share-Description:before {
+  content: "\f1e0";
+  font-family: fontawesome;
+  color: var(--pink-color);
+  font-size: 17px;
+  padding-right: 6px;
+}
+
+.Post-Share-Buttons {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.Post-Share-Buttons a {
+  width: 13.5%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 1.2%;
+  text-align: center;
+  height: 35px;
+  background: var(--white-color) !important;
+  line-height: 35px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: all 1s linear;
+  margin-bottom: 13px;
+}
+
+.Post-Share-Buttons a:hover {
+  transition: all 1s linear;
+}
+
+a.share-facebook:before,
+a.share-x-twitter:before,
+a.share-Print:before,
+a.share-linkedin:before,
+a.share-Pinterest:before,
+.Post-Share-Buttons a.whatsapp:before {
+  font-family: fontawesome;
+  margin-right: 5px;
+}
+
+a.share-facebook:before {
+  content: "\f09a";
+}
+
+a.share-x-twitter:before {
+  content: "\e61b";
+}
+
+a.share-Print:before {
+  content: "\f02f";
+}
+
+a.share-linkedin:before {
+  content: "\f0e1";
+}
+
+a.share-Pinterest:before {
+  content: "\f231";
+}
+
+.Post-Share-Buttons a.whatsapp:before {
+  content: "\f232";
+}
+
+.Post-Share-Buttons a.share-facebook,
+.Post-Share-Buttons a.share-x-twitter,
+.Post-Share-Buttons a.share-Print,
+.Post-Share-Buttons a.share-Pinterest,
+.Post-Share-Buttons a.share-linkedin,
+.Post-Share-Buttons a.whatsapp {
+  border: 1px solid;
+}
+
+.Post-Share-Buttons a.share-facebook {
+  color: #1877f2;
+}
+
+.Post-Share-Buttons a.share-x-twitter {
+  color: #000;
+}
+
+.Post-Share-Buttons a.share-Print {
+  color: #555555;
+}
+
+.Post-Share-Buttons a.share-Pinterest {
+  color: #e60023;
+}
+
+.Post-Share-Buttons a.share-linkedin {
+  color: #0073b1;
+}
+
+.Post-Share-Buttons a.whatsapp {
+  color: #028948;
+}
+
+.Post-Share-Buttons a:hover {
+  text-shadow: 5px 5px 5px transparent !important;
+}
+
+.Post-Share-Buttons a.share-facebook:hover,
+.Post-Share-Buttons a.share-x-twitter:hover,
+.Post-Share-Buttons a.share-Print:hover,
+.Post-Share-Buttons a.share-Pinterest:hover,
+.Post-Share-Buttons a.share-linkedin:hover,
+.Post-Share-Buttons a.whatsapp:hover {
+  box-shadow: 0 0 0 55px inset;
+  border: 1px solid !important;
+}
+
+.Post-Share-Buttons a.share-facebook:hover {
+  box-shadow-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.Post-Share-Buttons a.share-x-twitter:hover {
+  box-shadow-color: #000;
+  border-color: #000;
+}
+
+.Post-Share-Buttons a.share-Print:hover {
+  box-shadow-color: #555555;
+  border-color: #555555;
+}
+
+.Post-Share-Buttons a.share-Pinterest:hover {
+  box-shadow-color: #e60023;
+  border-color: #e60023;
+}
+
+.Post-Share-Buttons a.share-linkedin:hover {
+  box-shadow-color: #0073b1;
+  border-color: #0073b1;
+}
+
+.Post-Share-Buttons a.whatsapp:hover {
+  box-shadow-color: #028948;
+  border-color: #028948;
+}
+
+.Post-Share-Buttons a span {
+  visibility: hidden;
+  font-size: 10px;
+  color: var(--white-color);
+  position: absolute;
+  display: block;
+  margin-top: -12px;
+  transition-delay: 0.2s;
+  left: 13%;
+}
+
+.Post-Share-Buttons a:hover span {
+  visibility: visible !important;
+  margin-top: -35px;
+  border-bottom: 2px solid var(--dark-color);
+  font-size: 13px;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.18);
+  transition: 0.3s ease-in-out;
+}
+
+a.share-facebook span:before,
+a.share-x-twitter span:before,
+a.share-Print span:before,
+a.share-linkedin span:before,
+a.share-Pinterest span:before,
+a.whatsapp span:before {
+  font-family: fontawesome;
+  margin-right: 5px;
+  border-right: 1px solid var(--white-color);
+  padding-right: 6px;
+  visibility: hidden;
+  color: var(--dark-color);
+  background: var(--white-color);
+  text-indent: 6px;
+  border: 1px solid var(--dark-color);
+  margin-top: 3px;
+  padding-right: 7px;
+  font-size: 16px !important;
+  display: inline-block;
+  vertical-align: -2px;
+  line-height: 1.2;
+  margin-left: 8px;
+  width: 21px;
+  height: 22px;
+  text-align: center;
+  border-radius: 100px;
+  padding-top: 5px;
+  transition: 0.2s ease-in-out;
+  float: left;
+}
+
+a.share-facebook span:before {
+  content: "\f09a";
+}
+
+a.share-x-twitter span:before {
+  content: "\e61b";
+}
+
+a.share-Print span:before {
+  content: "\f02f";
+}
+
+a.share-linkedin span:before {
+  content: "\f0e1";
+}
+
+a.share-Pinterest span:before {
+  content: "\f231";
+}
+
+a.whatsapp span:before {
+  content: "\f232";
+}
+
+a span:hover:before {
+  visibility: visible !important;
+  animation: jelly 0.9s infinite;
+}
+/* - End Post Share Buttons - */

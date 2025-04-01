@@ -1,0 +1,120 @@
+/* -- Start Footer -- */
+.footer {
+  position: relative;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px #ddd;
+  margin: 15px auto;
+  width: 98%;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+.footer .container {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.main-footer.social-link {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .copyRights-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.footer .copyRights-container .box-1,
+.footer .copyRights-container .box-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .copyRights-container .Btn {
+  padding: 0px;
+  padding-right: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--pink-color);
+  color: var(--pink-color);
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.footer .copyRights-container .Btn i {
+  height: 5px;
+  width: 5px;
+  border: none;
+}
+
+.footer .copyRights-container i {
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  border-radius: 8px;
+  border: 2px solid var(--pink-color);
+  font-size: 13px;
+  color: var(--pink-color);
+  padding: 6px;
+  margin-right: 5px;
+}
+
+.footer .designer {
+  color: var(--pink-color);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.footer .social-link li a {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 2px solid var(--pink-color);
+  transform: rotate(45deg);
+  transition: 0.4s ease;
+}
+
+.footer .social-link li a:hover {
+  border-color: var(--pink-color);
+}
+
+.footer .social-link li a i {
+  transform: rotate(-45deg);
+  font-size: 20px;
+  margin: 0;
+  color: var(--pink-color);
+}
+
+/* -- End Footer -- */
+
+/* - Start Footer Media Queries - */
+@media (max-width: 820px) {
+  .footer .copyRights-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* - End Footer Media Queries - */

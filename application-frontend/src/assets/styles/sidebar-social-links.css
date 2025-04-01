@@ -1,0 +1,215 @@
+/* - Start Sidebar Social Counter - */
+.social-counter {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.social-counter ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-counter ul li {
+  width: 23%;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  float: left;
+  border-radius: 63px;
+  box-shadow: 0 2px 0 var(--border-color);
+}
+
+.social-item:nth-child(5),
+.social-item:nth-child(6),
+.social-item:nth-child(7),
+.social-item:nth-child(8) {
+  border: none;
+}
+
+.social-counter ul li a {
+  margin: 0;
+  padding: 0;
+}
+
+.item-icon {
+  margin: 0 0 10px;
+  float: none;
+  width: 55px;
+  height: 51px;
+  display: inline-block;
+  line-height: 45px !important;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  font-size: 18px !important;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  shape-outside: border-box;
+  border-bottom-right-radius: 25px;
+  transition: all 0.4s ease;
+  border-bottom-left-radius: 25px;
+  box-sizing: border-box;
+  transition-duration: 1s;
+}
+
+.item-count {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 26px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  margin-left: auto;
+  border-radius: 33px;
+  margin-right: auto;
+  margin-top: 9px;
+}
+
+.item-text {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--primary-color);
+}
+
+.social-item .item-icon {
+  margin: 0 0 10px;
+  float: none;
+}
+
+.social-item.facebook .item-icon,
+.social-item.facebook .item-icon:after {
+  background-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.social-item.x-twitter .item-icon,
+.social-item.x-twitter .item-icon:after {
+  background-color: #000;
+  border-color: #000;
+}
+
+.social-item.vimeo .item-icon,
+.social-item.vimeo .item-icon:after {
+  background-color: #35c6ea;
+  border-color: #35c6ea;
+}
+
+.social-item.youtube .item-icon,
+.social-item.youtube .item-icon:after {
+  background-color: #f00;
+  border-color: #f00;
+}
+
+.social-item.dribbble .item-icon,
+.social-item.dribbble .item-icon:after {
+  background-color: #ea4c89;
+  border-color: #ea4c89;
+}
+
+.social-item.instagram .item-icon {
+  background-color: #e4405f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-color: #4e729a;
+}
+
+.social-item.instagram .item-icon:after {
+  background-color: #fdb778;
+  border-color: #fdb778;
+}
+
+.social-item.behance .item-icon,
+.social-item.behance .item-icon:after {
+  background-color: #1879fd;
+  border-color: #1879fd;
+}
+
+.social-item.soundcloud .item-icon,
+.social-item.soundcloud .item-icon:after {
+  background-color: #ff7e30;
+  border-color: #ff7e30;
+}
+
+.social-item.github .item-icon,
+.social-item.github .item-icon:after {
+  background-color: #3f91cb;
+  border-color: #3f91cb;
+}
+
+.social-item.linkedin .item-icon,
+.social-item.linkedin .item-icon:after {
+  background-color: #0073b1;
+  border-color: #0073b1;
+}
+
+.social-item.pinterest .item-icon,
+.social-item.pinterest .item-icon:after {
+  background-color: #e60023;
+  border-color: #e60023;
+}
+
+.item-icon:hover,
+.social-item .item-icon:hover:after {
+  box-shadow: 0 0 0 55px var(--dark-color) inset;
+  color: var(--white-color) !important;
+  text-shadow: 0 0 0 var(--white-color);
+  top: 30px;
+  left: 19px;
+  background: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.item-icon:hover {
+  animation: jelly 1.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.social-item .item-icon:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50px;
+  z-index: 0;
+  border-width: 11px 9px 9px 9px;
+  border-style: solid;
+  -webkit-transform: rotate(224deg);
+  -moz-transform: rotate(224deg);
+  -ms-transform: rotate(224deg);
+  -o-transform: rotate(224deg);
+  transform: rotate(224deg);
+  left: 41%;
+  margin-left: -5px;
+  z-index: 1;
+}
+
+.social-counter ul li:hover .item-text {
+  color: var(--dark-color);
+}
+
+.item-icon:before {
+  font-size: 27px;
+  color: var(--dark-color);
+  background: var(--white-color);
+  padding: 6px;
+  border-radius: 55px !important;
+  border: 1px solid var(--dark-color);
+  z-index: 999;
+  position: relative;
+  top: 5px;
+}
+
+/* - End Sidebar Social Counter - */

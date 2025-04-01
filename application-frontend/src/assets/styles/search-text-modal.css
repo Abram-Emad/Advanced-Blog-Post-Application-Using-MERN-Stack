@@ -1,0 +1,76 @@
+/* - Start Search Text Modal - */
+.search-text-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-text-modal-form {
+  width: 700px;
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.search-text-modal-form-close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: var(--red-color);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.search-text-modal-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--green-sea-color);
+  text-align: center;
+}
+
+.search-text-modal-input {
+  width: 90%;
+  border-radius: 10px;
+  color: var(--dark-color);
+  border: 1px solid var(--border-color);
+  font-size: 21px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.search-text-modal-btn {
+  width: max-content;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--pink-color);
+  border: none;
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--white-color);
+  border-radius: 15px;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+/* - End Search Text Modal - */
+
+/* - Start Search Text Modal Media Queries - */
+@media (max-width: 820px) {
+  .search-text-modal-form {
+    width: 90%;
+  }
+}
+/* - End Search Text Modal Media Queries - */

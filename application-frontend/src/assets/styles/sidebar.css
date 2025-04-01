@@ -1,0 +1,124 @@
+/* - Start Sidebar - */
+.sidebar {
+  width: 400px;
+  flex: 3;
+  margin-left: 20px;
+}
+
+.sidebar-first-container,
+.sidebar-second-container,
+.sidebar-third-container {
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+  margin-bottom: 15px;
+}
+
+.container-title {
+  text-transform: capitalize;
+  margin: 0 auto 15px;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 25px;
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  transform: 0.3s;
+}
+
+.container-title:hover {
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  transition-delay: 0.5s;
+}
+
+.container-title::before,
+.container-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--pink-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container-title::before {
+  left: -30px;
+}
+
+.container-title::after {
+  right: -30px;
+}
+
+.container-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
+}
+
+.container-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s linear forwards;
+}
+
+.sidebar-links {
+  padding: 10px;
+}
+
+.sidebar-link {
+  width: 45%;
+  margin: 8px 8px;
+  border-radius: 0px 25px 25px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-color);
+  cursor: pointer;
+  background-color: var(--gray-color);
+  text-align: center;
+  padding: 6px 5px;
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 5% 100%, 0% 50%, 5% 0);
+  text-align: end;
+}
+
+.sidebar-link:hover {
+  background-color: var(--pink-color);
+  color: var(--white-color);
+}
+
+.sidebar-link::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--white-color);
+}
+/* - End Sidebar - */
+
+/* - Start Sidebar Media Queries - */
+@media (max-width: 990px) {
+  .sidebar {
+    margin-top: 20px;
+  }
+
+  .sidebar-link::after {
+    left: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .sidebar-link::after {
+    left: 20px;
+  }
+}
+/* - End Sidebar Media Queries - */

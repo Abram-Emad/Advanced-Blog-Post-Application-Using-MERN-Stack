@@ -1,0 +1,126 @@
+/* - Start Post List - */
+.sidebar-post-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sidebar-post-item {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-post-item-image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.sidebar-post-item-image {
+  width: 100%;
+  height: 125px;
+  display: block;
+  border-radius: 25px;
+}
+
+.sidebar-post-item-image-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: -webkit-linear-gradient(top, #0000006b 25%, #00000099 51%);
+  z-index: 9;
+  border-radius: 20px;
+}
+
+.sidebar-post-item-info-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+}
+
+.sidebar-post-item-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  z-index: 99;
+  padding-bottom: 5px;
+}
+
+.sidebar-post-item-author .sidebar-post-item-username {
+  font-weight: bold;
+  font-size: 11px;
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  padding: 4px 7px;
+  border-radius: 15px;
+  z-index: 99;
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+
+.sidebar-post-item-date {
+  font-weight: bold;
+  font-size: 11px;
+  background-color: var(--green-sea-color);
+  color: var(--white-color);
+  padding: 4px 7px;
+  z-index: 99;
+  border-radius: 15px;
+}
+
+.sidebar-post-item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.sidebar-post-item-title {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fill-available;
+  top: 30%;
+  z-index: 99;
+}
+
+.sidebar-post-item-category {
+  background-color: var(--pumpkin-color);
+  color: var(--white-color);
+  padding: 2px 7px;
+  border-radius: 15px;
+  font-size: 13px;
+  z-index: 99;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* - End Post List - */
+
+/* - Start Post List Media Queries - */
+@media (max-width: 720px) {
+  .sidebar-post-item {
+    padding: 15px;
+  }
+
+  .sidebar-post-item-image {
+    object-fit: cover;
+  }
+}
+/* - End Post List Media Queries - */

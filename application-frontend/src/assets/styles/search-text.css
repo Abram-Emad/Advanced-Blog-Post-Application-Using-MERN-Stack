@@ -1,0 +1,49 @@
+/* - Start Search Text - */
+.search-text {
+    min-height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  
+  .finded-search-text {
+    flex: 9;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .search-text-title {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--gray-color);
+    font-size: 30px;
+    width: max-content;
+  }
+  
+  .search-text-not-found {
+    font-size: 30px;
+    margin: 20px 0;
+    color: var(--dark-color);
+  }
+  
+  .search-text-not-found span {
+    color: var(--red-color);
+  }
+  
+  .search-text-not-found-link {
+    font-size: 21px;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  /* - End Search Text - */
+  
+  /* - Start Search Text Media Queries - */
+  @media (max-width: 990px) {
+    .search-text {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  /* - End Search Text Media Queries - */
+  

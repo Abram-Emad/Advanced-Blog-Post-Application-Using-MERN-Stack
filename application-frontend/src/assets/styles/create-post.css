@@ -1,0 +1,73 @@
+/* - Start Create Post - */
+.create-post {
+  width: 100%;
+  height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.create-post-title {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.create-post-form {
+  width: 700px;
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create-post-input,
+.create-post-textarea,
+.create-post-upload {
+  width: 90%;
+  border-radius: 10px;
+  color: var(--dark-color);
+  border: 1px solid var(--border-color);
+  font-size: 21px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.create-post-textarea {
+  resize: none;
+}
+
+.create-post-upload {
+  background-color: var(--gray-color);
+}
+
+.create-post-btn {
+  width: max-content;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--pink-color);
+  border: none;
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--white-color);
+  border-radius: 15px;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+/* - End Create Post - */
+
+/* - Start Create Post Media Queries - */
+@media (max-width: 820px) {
+  .create-post-form {
+    width: 100%;
+  }
+}
+/* - End Create Post Media Queries - */
