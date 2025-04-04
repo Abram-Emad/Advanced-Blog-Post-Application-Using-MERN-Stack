@@ -98,7 +98,7 @@ const Profile = () => {
               <abbr title='choose profile photo'>
                 <label
                   htmlFor='file'
-                  className='bi bi-camera-fill upload-profile-photo-icon'></label>
+                  className='fa-solid fa-camera upload-profile-photo-icon'></label>
               </abbr>
               <input
                 style={{ display: "none" }}
