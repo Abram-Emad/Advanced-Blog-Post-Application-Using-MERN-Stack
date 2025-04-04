@@ -27,7 +27,7 @@ const Sidebar = () => {
               className='sidebar-link'
               key={category._id}
               to={`/posts/categories/${category.title}`}>
-              {category.title} <i class='fa-solid fa-tags'></i>
+              {category.title} <i className='fa-solid fa-tags'></i>
             </Link>
           ))}
         </ul>
