@@ -120,8 +120,8 @@ const PostDetails = () => {
                 onClick={() => dispatch(toggleLikePost(post?._id))}
                 className={
                   post?.likes.includes(user?._id)
-                    ? "bi bi-hand-thumbs-up-fill"
-                    : "bi bi-hand-thumbs-up"
+                    ? "fa-solid fa-thumbs-up"
+                    : "fa-regular fa-thumbs-up"
                 }></i>
             )}
             <small>{post?.likes.length} likes</small>
