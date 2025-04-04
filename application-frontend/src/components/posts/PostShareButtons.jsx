@@ -1,16 +1,7 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import "../../assets/styles/post-share-buttons.css";
 
 const PostShareButtons = ({ postUrl, postImage, postTitle }) => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const script = document.createElement("script");
-      script.src = "http://yourjavascript.com/09010225501/whatsappblogger.js";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-  }, []);
 
   const openPopup = (url) => {
     window.open(url, "sharer", "toolbar=0,status=0,width=626,height=436");
