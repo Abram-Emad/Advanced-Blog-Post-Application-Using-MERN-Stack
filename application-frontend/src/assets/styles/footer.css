@@ -2,7 +2,7 @@
 .footer {
   position: relative;
   background-color: var(--white-color);
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
   margin: 15px auto;
   width: 98%;
   padding: 10px;
