@@ -1,4 +1,3 @@
-markdown
 # Advanced Blog Post Application Using MERN Stack
 
 ![MERN Stack](https://img.shields.io/badge/MERN-Full%20Stack-green)
