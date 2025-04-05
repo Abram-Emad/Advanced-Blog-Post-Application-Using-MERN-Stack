@@ -36,6 +36,7 @@ const HeaderRight = () => {
             <span
               onClick={() => setDropdown((prev) => !prev)}
               className='header-right-username'>
+              <i className='fa-solid fa-chevron-down'></i>
               {user?.username}
             </span>
             <img
